@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:450px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+h1{
+    color:#333;
+    margin-bottom:10px;
+}
+
+h1 span{
+    color:#2575fc;
+}
+
+p{
+    color:#555;
+    margin-bottom:15px;
+}
+
+.info{
+    margin-top:20px;
+}
+
+.info h2{
+    color:#2575fc;
+    margin-bottom:10px;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    padding:5px;
+    color:#444;
+}
+
+.skills{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.skills span{
+    background:#2575fc;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.skills span:hover{
+    transform:scale(1.1);
+    background:#6a11cb;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#2575fc;
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#6a11cb;
+    transform:scale(1.05);
+}
+
+#message{
+    margin-top:15px;
+    font-weight:bold;
+    color:#2575fc;
+}
+
+.fade-in{
+    animation: fadeIn 2s ease;
+}
+
+.slide-up{
+    animation: slideUp 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes slideUp{
+    from{
+        transform:translateY(50px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
